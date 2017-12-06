@@ -1,3 +1,11 @@
+/*
+Team Blueberry Pancakes
+Arif Roktim and Shakil Rafi
+SoftDev1 pd7
+HW15 -- Sequential Progression
+2017-12-06
+*/
+
 console.log("Loaded js file");
 
 var fibonacci = function (n) {
