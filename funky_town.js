@@ -48,3 +48,31 @@ console.log("Testing randomStudent...");
 for (var i = 0; i < 10; i++) {
   console.log("Here's a random student: " + randomStudent());
 }
+
+// ================= PHASE II ================= \\
+var fibnum = 0;
+var fibTester = function() {
+  var fib = fibonacci(fibnum);
+  var output = "fibonacci(" + fibnum + "): " + fib;
+  console.log(output);
+  document.getElementById("fib_viewer").innerHTML = output;
+  fibnum++;
+}
+
+var gcdTester = function() {
+  var num1 = Math.ceil(Math.random() * 1000);
+  var num2 = Math.ceil(Math.random() * 1000);
+  var output = "gcd(" + num1 + ", " + num2 + "): " + gcd(num1, num2);
+  console.log(output);
+  document.getElementById("gcd_viewer").innerHTML = output;
+}
+
+var student_tester = function() {
+  var output = "random student: " + randomStudent();
+  console.log(output);
+  document.getElementById("student_viewer").innerHTML = output;
+}
+
+document.getElementById("fib_btn").addEventListener("click", fibTester);
+document.getElementById("gcd_btn").addEventListener("click", gcdTester);
+document.getElementById("student_btn").addEventListener("click", student_tester);
